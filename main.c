@@ -20,5 +20,8 @@ int main(void)
 		quit = player_move(1, board);
 		if (quit == 1) break;
 	} while(quit == 0);
+	
 	return 0;
 }
+
+

@@ -8,7 +8,7 @@ int player_move(int player, char board[N][N])
 	while(done != 1) {
 		if(player == 0){
 		
-		printf("\nput a new white othello: "); 
+	printf("\nput a new white othello: "); 
 		scanf("%d %d",&x, &y);
 		//종료 조건 
 		if(board[x][y] == ' ')	{board[x][y] = 'O';	break;}
