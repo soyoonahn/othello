@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define N 6
-
+/*
 int player_move(int player, char board[N][N])
 {
 	int x, y, done = 0;
@@ -22,4 +22,4 @@ int player_move(int player, char board[N][N])
 		if(board[x][y] == ' ')	{board[x][y] = 'X';	break;}
 		else printf("invalid input! (already occupied).\n"); }}
 	return 0;
-}
+}*/

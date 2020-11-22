@@ -12,9 +12,16 @@ int isGameEnd = 0;
 
 char board[N][N];
 
-extern void init_board(char board[][N]);
-extern int player_move(int player, char board[][N]);
-extern void print_board(char board[][N]);
+extern int init_board();
+
+extern int player_move();
+extern int print_board();
+extern int able_to_place();
+extern int print_flip_number();
+extern int change_turn();
+extern int print_valid_flip();
+extern int print_valid_range();
+extern int check_result();
 
 int main(void)
 {	
@@ -26,7 +33,7 @@ int board_col;
 
 init_board(); // 게임 초기화
 
-while(isGameEnd == 0)
+/*while(isGameEnd == 0)
 {
 	print_board(); //판 배치와 WHITE, BLACK 점수 출력
 	if (able_to_place == 0)
@@ -40,7 +47,7 @@ while(isGameEnd == 0)
 		{
 			if (able_to_flip(board_row, board_col))
 			{
-				put_othello(board_row, board_col);
+				player_move(board_row, board_col);
 				
 				while(able_to_flip(board_row, board_col))
 					try_to_flip(board_row, board_col);
@@ -55,6 +62,6 @@ while(isGameEnd == 0)
 		 
 	 } 
 	 
-	 check_result();	
+	 check_result();	*/
  } 
 
