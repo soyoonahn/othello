@@ -4,18 +4,17 @@
 
 #define N 6
 
-#define WHITE 0
-#define BLACK 1
-#define EMPTY 2
+#define WHITE 'O'
+#define BLACK 'X'
+#define EMPTY ' '
 
 extern char board[N][N];
 extern int player;
 extern int score[2];
 
-void print_board(char board[N][N])
+void print_board()
 {
 	int i, j;
-	printf(" ");
 	for(i=0; i<N; i++)
 		printf(" %i", i);
 		
@@ -31,4 +30,5 @@ void print_board(char board[N][N])
 		printf("\n");
 	}
 printf(" -------------\n");
+printf(" STATUS - WHITE: %d, BLACK: %d \n", score[WHITE], score[BLACK]);
 }

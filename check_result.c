@@ -4,13 +4,13 @@
 
 #define N 6
 
-#define WHITE 0
-#define BLACK 1
-#define EMPTY 2
+#define WHITE 'O'
+#define BLACK 'X'
+#define EMPTY ' '
 
 extern char board[N][N];
-extern int player;
 extern int score[2];
+
 
 void check_result(){
 	if(score[WHITE] > score[BLACK])
@@ -19,4 +19,5 @@ void check_result(){
 		printf("BLACK wins.\n");
 	else
 		printf("Draw game.\n");
+		
 }

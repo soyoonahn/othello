@@ -8,10 +8,6 @@
 #define BLACK 'X'
 #define EMPTY ' '
 
-extern char board[N][N];
-extern int player;
-extern int score[2];
+int able_to_flip();
 
-int change_turn(){
-	player = (player + 1)%2;
-} 
+int try_to_flip();

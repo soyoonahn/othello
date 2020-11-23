@@ -7,11 +7,11 @@
 #define WHITE 'O'
 #define BLACK 'X'
 #define EMPTY ' '
+char board[N][N];
+int player;
+int score[2];
 
-extern char board[N][N];
-extern int player;
-extern int score[2];
 
-int change_turn(){
-	player = (player + 1)%2;
-} 
+int isGameEnd(){
+
+}
