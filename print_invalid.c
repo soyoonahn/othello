@@ -8,3 +8,7 @@ int print_invalid_flip(){
 int print_invalid_range(){
 	printf("invalid input! (should be less than N\n)");
 }
+
+int print_invalid_occupied(){
+	printf("invalid input! (already occupied\n)");
+}

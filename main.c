@@ -4,11 +4,12 @@
 
 #define N 6
 
-#define WHITE 'O'
-#define BLACK 'X'
-#define EMPTY ' '
+#define WHITE 1
+#define BLACK 2
+#define EMPTY 0
+
 char board[N][N];
-int player;
+int player = 0;
 int score[2];
 int isGameEnd = 0;
 
@@ -28,7 +29,7 @@ extern int change_turn(); // 턴 바꾸기
 //extern int print_invalid_range(); // 배치 불가(범위 벗어남) 
 extern int check_result(); 
 extern int over_board();
-//extern int isGameEnd();
+extern int print_invalid_occupied();
 int main(void)
 {	
 
@@ -36,6 +37,7 @@ int row;
 int col;
 int board_row;
 int board_col;
+int i, j;
 
 init_board(); // 게임 초기화
 
@@ -49,26 +51,17 @@ while(isGameEnd == 0)
 		continue; // 두 player 모두 배치가 불가능하면 반복문 빠져나가야 함
 	}
 	
-	input_position(&board_row, &board_col);
-		/*if(over_board(board_row, board_col == 1))
-		{
-			if (able_to_flip(board_row, board_col))
-			{
-				put_position(board_row, board_col);
-				
-				while(able_to_flip(board_row, board_col))
-					try_to_flip(board_row, board_col);
-					
-				print_flip_number();
-				change_turn();
-					
-			}
-			else print_invalid_flip();
+		if ((board[i][j] == EMPTY)) {
+			input_position(&board_row, &board_col);
+			put_position(board_row, board_col);
 		}
-		else print_invalid_range();*/
+		
+		else print_invalid_occupied(); 
+		
 	
-	 } 	
-	 
-	 check_result(); 	
+	 } 
+	
+change_turn();	
+	check_result(); 	
  } 
 

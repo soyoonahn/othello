@@ -4,9 +4,9 @@
 
 #define N 6
 
-#define WHITE 'O'
-#define BLACK 'X'
-#define EMPTY ' '
+#define WHITE 1
+#define BLACK 2
+#define EMPTY 0
 
 extern char board[N][N];
 extern int score[2];

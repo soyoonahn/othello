@@ -4,22 +4,25 @@
 
 #define N 6
 
-#define WHITE 'O'
-#define BLACK 'X'
-#define EMPTY ' '
+#define WHITE 1
+#define BLACK 2
+#define EMPTY 0
 
 extern char board[N][N];
-extern int player;
+extern int player ;
 extern int score[2];
+
+int change_turn(){
+	player = (player + 1) % 2; } 
 
 int input_position(int *board_row, int*board_col)
 {
-	if (player == WHITE){
+	if (player == 1){
 		printf("put a white othello: ");
 		scanf("%d %d", board_row, board_col);
 	}
 		
-	else if (player == BLACK){
+	else if (player == 2){
 		printf("put a black othello: ");
 		scanf("%d %d", board_row, board_col);
 	}
