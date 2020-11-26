@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=9
+UnitCount=4
 
 [VersionInfo]
 Major=1
@@ -91,16 +91,6 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=over_range.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit7]
 FileName=able_to_place.c
 CompileCpp=0
 Folder=
@@ -110,8 +100,18 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit8]
+[Unit7]
 FileName=print_invalid.c
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit8]
+FileName=flip.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -132,16 +132,6 @@ BuildCmd=
 
 [Unit10]
 FileName=flip.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit5]
-FileName=check_result.c
 CompileCpp=0
 Folder=
 Compile=1
