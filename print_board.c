@@ -11,7 +11,7 @@ extern char board[N][N];
 extern int player;
 extern int score[2];
 
-void print_board(char board[N][N])
+void print_board(char board[N][N]) //보드의 현재 상태를 화면에 출력 
 {
 	int i, j;
 	printf(" ");
