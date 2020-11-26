@@ -59,6 +59,5 @@ int player_move(int player, char board[N][N])
 					continue;}
 				 }
 		
-		}
-	return 0;
-}}
+	}}
+return 0;}
