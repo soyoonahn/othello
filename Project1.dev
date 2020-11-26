@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=player_put.c
+FileName=player_move.c
 CompileCpp=0
 Folder=
 Compile=1
