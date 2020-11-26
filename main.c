@@ -3,11 +3,12 @@
 
 #define N 6		  //macro 이용하여 보드의 칸 수를 정의
 
-int WHITE, BLACK; 
-
+//전역 변수 선언(외부 연결 가능) 
 int score[2]; 	  //white와 black의 score를 저장할 배열 선언. white, black 두가지이므로 크기를 2로 선언. 
 char board[N][N]; //2차원 문자 배열로 NxN 크기의 보드 나타내기.  
+int WHITE, BLACK;
 
+//extern으로 다른 소스 파일에서 함수 불러와 사용 가능 
 extern void init_board(char board[][N]);
 extern int player_move(int player, char board[][N]);
 extern void print_board(char board[][N]);

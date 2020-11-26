@@ -3,10 +3,11 @@
 
 #define N 6
 
-extern int WHITE, BLACK; 
+//extern을 이용하여 main파일의 변수 참조
 extern char board[N][N];
 extern int player;
 extern int score[2];
+extern int WHITE, BLACK; 
 
 void print_board(char board[N][N]) //보드의 현재 상태를 화면에 출력 
 {

@@ -2,10 +2,12 @@
 #include <stdlib.h>
 
 #define N 6
-extern int WHITE, BLACK; 
 
+//extern을 이용하여 main파일의 변수 참조 
 extern char board[N][N];
+extern int player;
 extern int score[2];
+extern int WHITE, BLACK; 
 
 void init_board(char board[][N])
 {
